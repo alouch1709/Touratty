@@ -1,0 +1,684 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Header - Top bar */
+.top-bar {
+  background-color: black;
+  color: white;
+  padding: 5px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.top-bar input[type="email"] {
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.top-bar button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  border: none;
+  background-color: white;
+  color: black;
+  font-size: 12px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Header - Main bar */
+.main-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+}
+
+.main-bar .logo img {
+  height: 50px;
+}
+
+.main-bar .search-bar {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex: 1;
+  margin: 0 20px;
+}
+
+.main-bar .search-bar input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.main-bar .search-bar button {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+
+.main-bar .icons a {
+  margin-left: 20px;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+
+/* Menu principal */
+.nav-bar {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 20px;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-item > a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  padding: 5px 10px;
+}
+
+.menu-item > a:hover {
+  color: #f4c842;
+}
+
+/* Sous-menu */
+.submenu {
+  display: none; /* Masqué par défaut */
+  position: absolute;
+  top: 100%; /* Juste en dessous de l'élément parent */
+  left: 0;
+  width: auto; /* Largeur adaptative */
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 1000;
+  border: 1px solid #ddd;
+}
+
+/* Grille horizontale */
+.submenu-grid {
+  display: flex; /* Aligne tout sur une seule ligne */
+  gap: 20px; /* Espacement entre les colonnes */
+}
+
+/* Chaque catégorie */
+.submenu-item {
+  display: flex;
+  flex-direction: column; /* Organise les titres et sous-éléments verticalement */
+  min-width: 150px; /* Largeur minimum pour chaque colonne */
+}
+
+.submenu-item h4 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.submenu-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.submenu-item ul li {
+  margin-bottom: 5px;
+}
+
+.submenu-item ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #555;
+}
+
+.submenu-item ul li a:hover {
+  color: #f4c842;
+}
+
+/* Afficher le sous-menu au survol */
+.menu-item:hover .submenu {
+  display: block;
+}
+
+/* Sous-menu de Gourmet */
+.submenu {
+  display: none; /* Masqué par défaut */
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  z-index: 1000;
+  border: 1px solid #ddd;
+}
+
+/* Liste verticale */
+.submenu-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.submenu-list li {
+  margin-bottom: 8px;
+}
+
+.submenu-list li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #555;
+}
+
+.submenu-list li a:hover {
+  color: #f4c842;
+}
+
+/* Affichage au survol */
+.menu-item:hover .submenu {
+  display: block;
+}
+
+
+@media (max-width: 768px) {
+  .submenu-grid {
+      flex-direction: column; /* Les colonnes deviennent des lignes */
+      gap: 10px;
+  }
+
+  .menu {
+      flex-direction: column; /* Menu principal en colonne */
+      gap: 10px;
+  }
+}
+
+
+/* Banner */
+.banner {
+  background: url('banner01.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.banner h1 {
+  font-size: 36px;
+}
+
+.banner button {
+  background-color: #f4d03f;
+  border: none;
+  padding: 10px 20px;
+  color: #333;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+/* Section principale */
+.popular-categories {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #f9f9f9;
+}
+
+.popular-categories h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Conteneur des catégories */
+.categories-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Pour gérer le responsive */
+  padding: 0 20px;
+}
+
+/* Élément de catégorie */
+.category-item {
+  text-align: center;
+  flex: 1 1 calc(16% - 20px); /* Taille responsive, ajustez si nécessaire */
+  max-width: 150px;
+}
+
+/* Images circulaires */
+.category-item img {
+  width: 100%;
+  aspect-ratio: 1; /* Rend les images parfaitement carrées */
+  border-radius: 50%;
+  object-fit: cover; /* S'assure que l'image est bien ajustée */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Texte sous les images */
+.category-item p {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+
+/* Categories */
+.categories {
+  padding: 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.category-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.category {
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Products */
+.products {
+  padding: 20px;
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+}
+
+.product button {
+  background-color: #2ecc71;
+  border: none;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Section : Makers of the Month */
+.makers-of-the-month {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.makers-of-the-month h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.makers-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Responsive design */
+}
+
+.maker-item {
+  text-align: center;
+  max-width: 200px;
+  flex: 1 1 calc(33.333% - 20px);
+}
+
+.maker-item img {
+  width: 100%;
+  height: 250px; /* Hauteur fixe pour uniformiser les images */
+  object-fit: cover; /* Ajuste l'image pour remplir le cadre tout en coupant les débordements */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.maker-item button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: 2px solid #333;
+  background-color: white;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.maker-item button:hover {
+  background-color: #333;
+  color: white;
+}
+
+/* Section : Personalized Just for You */
+.personalized {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+  background-color: #fff;
+}
+
+.personalized-content {
+  flex: 1 1 40%;
+  text-align: left;
+}
+
+.personalized-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: 'Arial', sans-serif;
+}
+
+.personalized-content button {
+  padding: 10px 15px;
+  border: 2px solid #333;
+  background-color: white;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.personalized-content button:hover {
+  background-color: #333;
+  color: white;
+}
+
+.personalized-image {
+  flex: 1 1 50%;
+  text-align: center;
+}
+
+.personalized-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Conteneur principal */
+.products-page {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Section des filtres */
+.filters {
+  width: 20%;
+  border-right: 1px solid #ddd;
+  padding-right: 20px;
+}
+
+.filters h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.filters .filter-group h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.filters ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.filters ul li {
+  margin-bottom: 5px;
+}
+
+.filters ul li a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+}
+
+.filters ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Section des produits */
+.products-grid {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Carte produit */
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-info {
+  padding: 10px;
+}
+
+.product-info h3 {
+  font-size: 16px;
+  color: #333;
+  margin: 10px 0 5px;
+}
+
+.product-info .price {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+
+.product-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.03);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #f8f8f8;
+  font-size: 14px;
+  color: #666;
+}
+
+
+
+/* Footer global */
+.footer {
+  font-family: Arial, sans-serif;
+  background-color: #333; /* Couleur de fond sombre */
+  color: #fff; /* Texte en blanc */
+  padding: 20px;
+  text-align: left; /* Texte aligné à gauche */
+}
+
+/* Conteneur principal */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Espacement entre les sections */
+  gap: 20px;
+}
+
+/* Section individuelle */
+.footer-section {
+  flex: 1 1 calc(20% - 20px); /* Largeur adaptable pour chaque section */
+  min-width: 150px;
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #f4c842; /* Couleur des titres */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Icônes des réseaux sociaux */
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  background-color: #f4c842; /* Fond des icônes */
+  border-radius: 50%; /* Forme ronde */
+  color: #333; /* Couleur des icônes */
+  line-height: 24px; /* Centrage vertical */
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #fff;
+  color: #f4c842;
+}
+
+/* Icônes de paiement */
+.payment-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.payment-icons img {
+  width: 40px; /* Taille fixe des logos */
+  height: auto;
+}
+
+/* Sélecteur de langue */
+.footer-section select {
+  margin-top: 10px;
+  padding: 5px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: none;
+  background-color: #e7b317;
+  color: #333;
+  cursor: pointer;
+}
+
+.footer-section select option {
+  color: #333;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Espacement entre les éléments */
+  align-items: center; /* Aligne les éléments verticalement */
+  padding: 10px 20px;
+  border-top: 1px solid #444;
+  font-size: 14px;
+  color: #ccc;
+  text-align: left;
+}
+
+/* Conteneur du drapeau */
+.currency-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Espacement entre le drapeau et le texte */
+}
+
+.currency-selector img {
+  width: 24px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+  flex: 1; /* Permet au texte de s'étendre si besoin */
+  text-align: right; /* Texte aligné à droite */
+}

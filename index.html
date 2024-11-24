@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Touratty - Artisanat Marocain</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Importation des icônes Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Barre supérieure -->
+        <div class="top-bar">
+            <span>5% OFF</span>
+            <input type="email" placeholder="Email....">
+            <button>GET</button>
+            <span>LIMITED TIME FREE SHIPPING WHEN YOU SPEND 250€/$</span>
+        </div>
+
+        <!-- Barre principale -->
+        <div class="main-bar">
+            <div class="logo">
+                <img src="logo.jpg" alt="Touratty Logo">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button>
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            <div class="icons">
+                <a href="#account"><i class="fa fa-user"></i> Account</a>
+                <a href="#cart"><i class="fa fa-shopping-cart"></i> Cart</a>
+            </div>
+        </div>
+<!-- Menu de navigation -->
+<nav class="nav-bar">
+<ul class="menu">
+    <!-- HOME DECOR -->
+    <li class="menu-item">
+        <a href="#home-decor">HOME DECOR</a>
+        <div class="submenu">
+            <div class="submenu-grid">
+                <!-- Exemple de colonnes -->
+                <div class="submenu-item">
+                    <h4>DINING</h4>
+                    <ul>
+                        <li><a href="products.html">Cups & Mugs</a></li>
+                        <li><a href="#">Plates & Bowls</a></li>
+                        <li><a href="#">Tagines</a></li>
+                    </ul>
+                </div>
+                <div class="submenu-item">
+                    <h4>LIVING ROOM & BEDROOM</h4>
+                    <ul>
+                        <li><a href="#">Baskets, Pots & Plates</a></li>
+                        <li><a href="#">Candles & Candlesticks</a></li>
+                        <li><a href="#">Rugs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </li>
+
+    <!-- WOMEN -->
+    <li class="menu-item">
+        <a href="#women">WOMEN</a>
+        <div class="submenu">
+            <div class="submenu-grid">
+                <div class="submenu-item">
+                    <h4>CLOTHING</h4>
+                    <ul>
+                        <li><a href="#">Djellabas & Gandouras</a></li>
+                        <li><a href="#">Dresses & Kimonos</a></li>
+                        <li><a href="#">Kaftans</a></li>
+                    </ul>
+                </div>
+                <div class="submenu-item">
+                    <h4>BAGS</h4>
+                    <ul>
+                        <li><a href="#">Backpacks</a></li>
+                        <li><a href="#">Mini Bags</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </li>
+
+    <!-- MEN -->
+    <li class="menu-item">
+        <a href="#men">MEN</a>
+        <div class="submenu">
+            <div class="submenu-grid">
+                <div class="submenu-item">
+                    <h4>CLOTHING</h4>
+                    <ul>
+                        <li><a href="#">Djellabas</a></li>
+                        <li><a href="#">Sweatshirts</a></li>
+                    </ul>
+                </div>
+                <div class="submenu-item">
+                    <h4>SHOES</h4>
+                    <ul>
+                        <li><a href="#">Moroccan Slippers</a></li>
+                        <li><a href="#">Sneakers</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </li>
+
+    <!-- SKINCARE -->
+    <li class="menu-item">
+        <a href="#skincare">SKINCARE</a>
+        <div class="submenu">
+            <div class="submenu-grid">
+                <div class="submenu-item">
+                    <h4>FACE CARE</h4>
+                    <ul>
+                        <li><a href="#">Face Masks</a></li>
+                        <li><a href="#">Face Oils</a></li>
+                    </ul>
+                </div>
+                <div class="submenu-item">
+                    <h4>BODY CARE</h4>
+                    <ul>
+                        <li><a href="#">Body Oils</a></li>
+                        <li><a href="#">Scrubs</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </li>
+
+    <!-- GOURMET -->
+    <li class="menu-item">
+        <a href="#gourmet">GOURMET</a>
+            <div class="submenu">
+                <ul class="submenu-list">
+                      <li><a href="#">Culinary Oils</a></li>
+                      <li><a href="#">Amlou</a></li>
+                      <li><a href="#">Honey</a></li>
+                      <li><a href="#">Spreads</a></li>
+                      <li><a href="#">Gourmet Gift Boxes</a></li>
+                      <li><a href="#">Teas & Saffron</a></li>
+                      <li><a href="#">Sugar, Molasses, Waters & Powders</a></li>
+                  </ul>
+              </div>
+      </li>
+
+    <!-- PERSONALIZE IT -->
+    <li class="menu-item">
+        <a href="/personalize">PERSONALIZE IT</a>
+    </li>
+</ul>
+</nav>
+ 
+</header>
+
+    <!-- Section principale -->
+    <main>
+        <!-- Bannière -->
+        <section class="banner">
+            <h1>Découvrez l'artisanat marocain</h1>
+            <p>Des produits uniques, faits main par nos artisans.</p>
+            <button onclick="alert('Explorer les créations')">Explorer les créations</button>
+        </section>
+
+        <!-- Catégories -->
+        <section class="popular-categories">
+            <h2>Popular Categories</h2>
+            <div class="categories-container">
+                <div class="category-item">
+                    <img src="candles.jpg" alt="Candles">
+                    <p>Candles</p>
+                </div>
+                <div class="category-item">
+                    <img src="rugs.jpg" alt="Rugs">
+                    <p>Rugs</p>
+                </div>
+                <div class="category-item">
+                    <img src="body-oils.jpg" alt="Body Oils">
+                    <p>Body Oils</p>
+                </div>
+                <div class="category-item">
+                    <img src="pillows.jpg" alt="Decorative Pillows">
+                    <p>Decorative Pillows</p>
+                </div>
+                <div class="category-item">
+                    <img src="wall-decor.jpg" alt="Wall Decor">
+                    <p>Wall Decor</p>
+                </div>
+                <div class="category-item">
+                    <img src="bags.jpg" alt="Totes & Bags">
+                    <p>Totes & Bags</p>
+                </div>
+            </div>
+        </section>
+
+            <!-- Section : Makers of the Month -->
+        <section class="makers-of-the-month">
+            <h2>Makers of the Month</h2>
+            <div class="makers-container">
+                <div class="maker-item">
+                    <img src="maker1.jpg" alt="Maker 1">
+                    <button>Shop from IDYR</button>
+                </div>
+                <div class="maker-item">
+                    <img src="maker2.jpg" alt="Maker 2">
+                    <button>Shop from AM Design</button>
+                </div>
+                <div class="maker-item">
+                    <img src="maker3.jpg" alt="Maker 3">
+                    <button>Shop from Antik Cosmetic</button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section : Personalized Just for You -->
+        <section class="personalized">
+            <div class="personalized-content">
+                <h2>PERSONALIZED JUST FOR YOU!</h2>
+                <button>Shop Customizable Products</button>
+             </div>
+            <div class="personalized-image">
+                <img src="custom-products.jpg" alt="Customizable Products">
+            </div>
+        </section>
+        
+
+        <!-- Produits en vedette -->
+        <section class="products">
+            <h2>Produits en vedette</h2>
+            <div class="product-list">
+                <div class="product">
+                    <img src="product1.jpg" alt="Tapis berbère">
+                    <h3>Shampoo</h3>
+                    <p>Prix : 1200 MAD</p>
+                    <button>Voir plus</button>
+                </div>
+                <div class="product">
+                    <img src="product2.jpg" alt="Poterie traditionnelle">
+                    <h3>Poterie traditionnelle</h3>
+                    <p>Prix : 400 MAD</p>
+                    <button>Voir plus</button>
+                </div>
+                <div class="product">
+                    <img src="product3.jpg" alt="Sac artisanaux">
+                    <h3>Sac artisanaux</h3>
+                    <p>Prix : 900 MAD</p>
+                    <button>Voir plus</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   <!-- Footer -->
+<footer class="footer">
+<div class="footer-container">
+    <!-- Section : Get in Touch -->
+    <div class="footer-section">
+        <h4>GET IN TOUCH</h4>
+        <ul>
+            <li><i class="fa fa-phone"></i> +212-689-61-63-57</li>
+            <li><i class="fa fa-envelope"></i> <a href="mailto:info@example.com">Email us</a></li>
+            <li><i class="fa fa-comments"></i> <a href="#">Live chat</a></li>
+        </ul>
+        <p>Follow us</p>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </div>
+
+    <!-- Section : About -->
+    <div class="footer-section">
+        <h4>ABOUT</h4>
+        <ul>
+            <li><a href="#">What is Touratty?</a></li>
+            <li><a href="#">Impact Report</a></li>
+            <li><a href="#">Explore our Blog</a></li>
+            <li><a href="#">Ready to sell on Touratty?</a></li>
+            <li><a href="#">My account</a></li>
+        </ul>
+    </div>
+
+    <!-- Section : Customer Service -->
+    <div class="footer-section">
+        <h4>CUSTOMER SERVICE</h4>
+        <ul>
+            <li><a href="#">Track your order</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shipping Information</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">My account</a></li>
+        </ul>
+    </div>
+
+    <!-- Section : The Makers -->
+    <div class="footer-section">
+        <h4>THE MAKERS</h4>
+        <ul>
+            <li><a href="#">Moroccan craft</a></li>
+            <li><a href="#">Morocco's cities guides</a></li>
+            <li><a href="#">Morocco shopping guide</a></li>
+            <li><a href="#">Artisan Login</a></li>
+        </ul>
+    </div>
+
+    <!-- Section : Payment and Language -->
+    <div class="footer-section">
+        <h4>We accept</h4>
+        <div class="payment-icons">
+            <img src="amex.png" alt="Cash On Dilevery">
+            <img src="mastercard.png" alt="MasterCard">
+            <img src="visaa.png" alt="Visa">
+        </div>
+        <h4>Language</h4>
+        <select>
+            <option value="en">English</option>
+            <option value="fr">French</option>
+            <option value="ar">Arabic</option>
+        </select>
+    </div>
+</div>
+
+<!-- Footer Bottom -->
+<!-- Footer Bottom -->
+<div class="footer-bottom">
+<div class="currency-selector">
+    <img src="morocco-flag.png" alt="Morocco Flag">
+    <span>MAD</span>
+</div>
+<p>&copy; 2024 Touratty - Located in Agadir, Morocco</p>
+<p>Made with <span style="color: red;">&#10084;</span> in Morocco by Wonderful Team</p>
+</div>
+</footer>
+</body>
+</html>
